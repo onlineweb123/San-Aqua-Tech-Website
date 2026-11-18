@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Aqua Tech - RO Sales & Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Noto Sans Tamil', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background-color: #e0f7fa;
+            padding: 45px 20px;
+        }
+
+        .hero h2 {
+            font-size: 1.75rem;
+            color: #00334e;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .hero .tagline {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .app-btn {
+            display: inline-block;
+            background-color: #00a859;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 10px rgba(0, 168, 89, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .app-btn:hover {
+            background-color: #008f4c;
+            transform: translateY(-2px);
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 35px 20px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #00334e;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        /* About Section */
+        .about-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #222;
+            margin-bottom: 40px;
+        }
+
+        /* Cards (Products & Services) */
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 360px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+        }
+
+        .product-card h3 {
+            font-size: 1.15rem;
+            color: #222;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Service Section Wrapper */
+        .services-wrapper {
+            background-color: #eef7fc;
+            padding: 40px 20px;
+        }
+
+        .services-wrapper .container {
+            padding: 0;
+        }
+
+        .service-card {
+            padding: 28px 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #0077b6;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .service-card p {
+            font-size: 0.98rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            display: block;
+            width: 100%;
+            background-color: #0077b6;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-top: 15px;
+            box-shadow: 0 4px 12px rgba(0, 119, 182, 0.3);
+            transition: background-color 0.2s;
+        }
+
+        .contact-btn:hover {
+            background-color: #005f92;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            z-index: 1000;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+        .whatsapp-float svg {
+            width: 34px;
+            height: 34px;
+            fill: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #002b40;
+            color: #ffffff;
+            padding: 20px 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>San Aqua Tech</h1>
+        <p>RO Water Purifier Sales & Service - Cuddalore</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>உங்கள் குடிநீரை நம்பிக்கையுடன் பாதுகாக்கும் தீர்வு!</h2>
+        <p class="tagline">Pure | Clean | Healthy Water</p>
+        <!-- ஆப் லிங்க் மாற்ற வேண்டிய இடம் (# என்பதற்கு பதில் ஆப் URL கொடுக்கவும்) -->
+        <a href="https://onlineweb123.github.io/San-Aqua-Tech-App/index.html" class="app-btn" target="_blank">San Aqua App</a>
+    </section>
+
+    <!-- About & Products Section -->
+    <div class="container">
+        <h2 class="section-title">எங்களை பற்றி</h2>
+        <p class="about-text">
+            நாங்கள் குடிநீர் சுத்திகரிப்பு இயந்திரங்களை விற்பனை செய்து சேவை வழங்கும் நிறுவனமாக உள்ளோம். உங்கள் வீட்டிற்கும் தொழிற்சாலைக்கும் ஏற்ற RO யூனிட் தேர்ந்தெடுக்க உதவுகிறோம்.
+        </p>
+
+        <h2 class="section-title">எங்கள் Product</h2>
+
+        <!-- Product 1 -->
+        <div class="card product-card">
+            <img src="a.jpg" alt="AQUA 2090 MODEL">
+            <h3>AQUA 2090 MODEL</h3>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card product-card">
+            <img src="b.jpg" alt="AQUA DIAMOND">
+            <h3>AQUA DIAMOND</h3>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card product-card">
+            <img src="c.jpg" alt="AQUA QUEEN">
+            <h3>AQUA QUEEN</h3>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-wrapper">
+        <div class="container">
+            <h2 class="section-title">எங்கள் சேவைகள் (SERVICE)</h2>
+
+            <!-- Service 1 -->
+            <div class="card service-card">
+                <h3>🛠️ அமைத்தல் (Installation)</h3>
+                <p>வீடு மற்றும் கம்பெனி இடங்களில் RO system அமைத்தல் சேவை.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card service-card">
+                <h3>🔄 ஃபில்டர் மாற்றம் (Filter)</h3>
+                <p>பழைய ஃபில்டரை புதியதாக மாற்றி தருகிறோம்.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card service-card">
+                <h3>🧪 நீர் பரிசோதனை</h3>
+                <p>நீர் TDS Quality மற்றும் Purity Test செய்து தருகிறோம்.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card service-card">
+                <h3>🔧 பொதுப்பராமரிப்பு</h3>
+                <p>RO பிழைகள், பழுதுகள், Any Complain அனைத்தும் சரிசெய்தல்.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="card service-card">
+                <h3>📅 AMC (Annual Maintenance)</h3>
+                <p>வருடாந்திர பராமரிப்பு ஒப்பந்தம் மூலம் திட்டமிட்ட பராமரிப்பு</p>
+            </div>
+
+            <!-- Call Button (உங்கள் அண்ணனின் நம்பரை இங்கே மாற்றிக்கொள்ளவும்) -->
+            <a href="tel:+919750598865" class="contact-btn">
+                📞 தொடர்புகொள்ள - 9750598865
+            </a>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button (உங்கள் அண்ணனின் நம்பரை இங்கே மாற்றிக்கொள்ளவும்) -->
+    <a href="https://wa.me/919750598865?text=வணக்கம்%20San%20Aqua%20Tech,%20எனக்கு%20RO%20சர்வீஸ்%20பற்றிய%20விவரம்%20தேவை." class="whatsapp-float" target="_blank" title="WhatsApp">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333 0 2.347.613 4.64 1.773 6.667l-1.88 6.867 7.027-1.84c1.947 1.067 4.147 1.64 6.413 1.64 7.36 0 13.333-5.973 13.333-13.333s-5.973-13.334-13.333-13.334zm7.76 18.84c-.32.907-1.867 1.733-2.613 1.84-.693.107-1.573.147-2.547-.16-.587-.187-1.347-.44-2.32-.867-4.08-1.76-6.747-5.867-6.947-6.133-.2-.267-1.653-2.2-1.653-4.2s1.04-2.987 1.413-3.387c.373-.4.813-.507 1.08-.507.267 0 .533.013.773.013.253 0 .587-.093.92.707.333.8 1.133 2.773 1.24 2.973.107.2.173.44.04.707-.133.267-.2.44-.4.667-.2.227-.413.507-.587.68-.2.2-.4.413-.173.813.227.4 1.013 1.667 2.173 2.707 1.493 1.333 2.747 1.747 3.147 1.947.4.2.627.173.867-.093.24-.267 1.013-1.187 1.28-1.587.267-.4.533-.333.893-.2.36.133 2.307 1.093 2.707 1.293.4.2.667.293.76.453.093.173.093.987-.227 1.893z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 San Aqua Tech. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
